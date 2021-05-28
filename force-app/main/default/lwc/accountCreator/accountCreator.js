@@ -13,15 +13,15 @@
 
 // 1. IMPORT the LightningElement
 import { LightningElement } from 'lwc';
-//2. IMPORT the OBJECT
+// 2. IMPORT the OBJECT
 import ACCOUNT_OBJECT from '@salesforce/schema/Account';
-//3. IMPORT the FIELDS
+// 3. IMPORT the FIELDS
 import NAME_FIELD from '@salesforce/schema/Account.Name';
-import REVENUE_FIELD from '@salesforce]/schema/Account.AnnualRevenue';
+import REVENUE_FIELD from '@salesforce/schema/Account.AnnualRevenue';
 import ACTNUMBER_FIELD from '@salesforce/schema/Account.AccountNumber';
 import INDUSTRY_FIELD from '@salesforce/schema/Account.Industry';
 // 4. IMPORT ShowToastEvent
-import { ShowToastEvent } from 'Lightning/platformShowToastEvent';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class AccountCreator extends LightningElement {
     // 5. Write inside the class the APIname and fields
