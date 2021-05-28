@@ -37,4 +37,4 @@ export default class AccountCreator extends LightningElement {
         });
         this.dispatchEvent(toastEvent);
     }
-}/
+}
