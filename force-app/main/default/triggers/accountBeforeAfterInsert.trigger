@@ -1,14 +1,15 @@
 /**
  * INSERT DESCRIPTION BEFORE AND CREATE OPORTUNITY AFTER
  * //1 - Name of trigger and the object that will fire it
- * //2 - For loop before to create a description
- * //3 - For loop after to create an opportunity calling a class
+ * //2 - For loop to get all the records inserted
+ * //3 - Create if to aplly logic
  */
 //1 - Name of trigger and the object that will fire it
 trigger accountBeforeAfterInsert on Account (before insert, after insert) {
-    // 2 - For loop before to create a description
+    //2 - For loop to get all the records inserted
     List<Opportunity> opt = new List<Opportunity>();
     for (Account acct : Trigger.New) {
+        //3 - Create if to aplly logic
         if (Trigger.isBefore) {
             acct.Description = 'It was insert using Trigger.isInsert';
         }
