@@ -13,6 +13,7 @@ trigger createPagamentotrigger on Account (before insert, after insert, after up
         }
     } else if (Trigger.isUpdate) {
         insertTaskInAccount.insertTaskInAccount(Trigger.New);
+        insertingWithDataBase.inserting(Trigger.New);
     }
 
 }
